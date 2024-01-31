@@ -38,4 +38,4 @@ jobs:
        if: always()
        with:
          files: |
-           test-results/**/*.xml
+           ${{ github.workspace }}/repo/test-results/**/*.xml
