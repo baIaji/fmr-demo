@@ -1,0 +1,78 @@
+<?xml version="1.0" ?>
+<e:events >
+	<infrastructure>
+	</infrastructure>
+	<e:started id="1" name="JUnit Jupiter" time="2022-10-07T10:57:29.193634500Z">
+		<metadata>
+			<junit:uniqueId>[engine:junit-jupiter]</junit:uniqueId>
+			<junit:legacyReportingName>JUnit Jupiter</junit:legacyReportingName>
+			<junit:type>CONTAINER</junit:type>
+		</metadata>
+	</e:started>
+	<e:started id="2" name="HelloTest" parentId="1" time="2022-10-07T10:57:29.247574500Z">
+		<metadata>
+			<junit:uniqueId>[engine:junit-jupiter]/[class:com.howtodoinjava.junit5.examples.xmlReport.HelloTest]</junit:uniqueId>
+			<junit:legacyReportingName>com.howtodoinjava.junit5.examples.xmlReport.HelloTest</junit:legacyReportingName>
+			<junit:type>CONTAINER</junit:type>
+		</metadata>
+		<sources>
+			<java:classSource className="com.howtodoinjava.junit5.examples.xmlReport.HelloTest"/>
+		</sources>
+	</e:started>
+	<e:started id="3" name="testOne()" parentId="2" time="2022-10-07T10:57:29.269523200Z">
+		<metadata>
+			<junit:uniqueId>[engine:junit-jupiter]/[class:com.howtodoinjava.junit5.examples.xmlReport.HelloTest]/[method:testOne()]</junit:uniqueId>
+			<junit:legacyReportingName>testOne()</junit:legacyReportingName>
+			<junit:type>TEST</junit:type>
+		</metadata>
+		<sources>
+			<java:methodSource className="com.howtodoinjava.junit5.examples.xmlReport.HelloTest" methodName="testOne" methodParameterTypes=""/>
+		</sources>
+	</e:started>
+	<e:finished id="3" time="2022-10-07T10:57:29.307527100Z">
+		<result status="SUCCESSFUL"/>
+	</e:finished>
+	<e:started id="4" name="testTwo()" parentId="2" time="2022-10-07T10:57:29.312537Z">
+		<metadata>
+			<junit:uniqueId>[engine:junit-jupiter]/[class:com.howtodoinjava.junit5.examples.xmlReport.HelloTest]/[method:testTwo()]</junit:uniqueId>
+			<junit:legacyReportingName>testTwo()</junit:legacyReportingName>
+			<junit:type>TEST</junit:type>
+		</metadata>
+		<sources>
+			<java:methodSource className="com.howtodoinjava.junit5.examples.xmlReport.HelloTest" methodName="testTwo" methodParameterTypes=""/>
+		</sources>
+	</e:started>
+	<e:finished id="4" time="2022-10-07T10:57:29.317529600Z">
+		<result status="FAILED">
+			<java:throwable assertionError="true" type="org.opentest4j.AssertionFailedError">
+				<![CDATA[org.opentest4j.AssertionFailedError: expected: <true>but was: <false>at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151) ...]]>
+			</java:throwable>
+		</result>
+	</e:finished>
+	<e:finished id="2" time="2022-10-07T10:57:29.325526800Z">
+		<result status="SUCCESSFUL"/>
+	</e:finished>
+	<e:finished id="1" time="2022-10-07T10:57:29.331528600Z">
+		<result status="SUCCESSFUL"/>
+	</e:finished>
+	<e:started id="5" name="JUnit Platform Suite" time="2022-10-07T10:57:29.332527800Z">
+		<metadata>
+			<junit:uniqueId>[engine:junit-platform-suite]</junit:uniqueId>
+			<junit:legacyReportingName>JUnit Platform Suite</junit:legacyReportingName>
+			<junit:type>CONTAINER</junit:type>
+		</metadata>
+	</e:started>
+	<e:finished id="5" time="2022-10-07T10:57:29.333523400Z">
+		<result status="SUCCESSFUL"/>
+	</e:finished>
+	<e:started id="6" name="JUnit Vintage" time="2022-10-07T10:57:29.333523400Z">
+		<metadata>
+			<junit:uniqueId>[engine:junit-vintage]</junit:uniqueId>
+			<junit:legacyReportingName>JUnit Vintage</junit:legacyReportingName>
+			<junit:type>CONTAINER</junit:type>
+		</metadata>
+	</e:started>
+	<e:finished id="6" time="2022-10-07T10:57:29.335541600Z">
+		<result status="SUCCESSFUL"/>
+	</e:finished>
+</e:events>
