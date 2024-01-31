@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuite errors="0" failures="1" name="com.howtodoinjava.junit5.examples.xmlReport.HelloTest" 
-	skipped="0" tests="2" time="0.076" version="3.0" ...>
+	skipped="0" tests="2" time="0.076" version="3.0">
 	<properties>
 		<property name="java.specification.version" value="17"/>
 		<property name="sun.cpu.isalist" value="amd64"/>
