@@ -30,14 +30,15 @@ jobs:
     - name: Run Tests
       run: |
         python manage.py test
+    - name: Zip artifact for deployment
+      run: zip release.zip static/* -r
     - name: Upload artifact for deployment jobs
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v3
       with:
         name: python-app
         path: |
-          . 
-          !venv/
-  
+          release.zip
+             !venv/ 
   publish-tests:
      runs-on: ubuntu-latest
      steps:
