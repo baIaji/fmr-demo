@@ -37,7 +37,7 @@ jobs:
       with:
         name: python-app
         path: |
-          release.zip
+          release_${{ matrix.python-version }}.zip
              !venv/ 
   publish-tests:
      runs-on: ubuntu-latest
