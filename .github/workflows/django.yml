@@ -55,6 +55,7 @@ jobs:
           artifacts: '[{"name": "fmr","version": "0.9.${{ github.run_number }}","semanticVersion": "0.9.${{ github.run_number }}","repositoryName": "${{ github.repository }}"}]'
   publish-tests:
      runs-on: ubuntu-latest
+     needs: registerartifact
      steps:
      - uses: actions/checkout@v3
      - name: ServiceNow DevOps Unit Test Results
@@ -67,6 +68,7 @@ jobs:
          job-name: 'Build'
          xml-report-filename: ./test-results/junit.xml
      - name: Publish Test Results
+       needs: registerartifact
        uses: EnricoMi/publish-unit-test-result-action@v2
        if: always()
        with:
