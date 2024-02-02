@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite errors="0" failures="1" name="com.howtodoinjava.junit5.examples.xmlReport.HelloTest" 
+<testsuite errors="0" failures="0" name="com.howtodoinjava.junit5.examples.xmlReport.HelloTest" 
 	skipped="0" tests="12" time="0.776" version="3.0">
 	<properties>
 		<property name="java.specification.version" value="17"/>
