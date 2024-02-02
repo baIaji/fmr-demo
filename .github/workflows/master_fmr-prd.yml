@@ -41,6 +41,7 @@ jobs:
   registerpackage:
     name: Register Package
     runs-on: ubuntu-latest
+    needs: build
     steps:
       - name: ServiceNow Register Package
         uses: ServiceNow/servicenow-devops-register-package@v3.1.0
