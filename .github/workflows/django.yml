@@ -57,6 +57,15 @@ jobs:
      runs-on: ubuntu-latest
      steps:
      - uses: actions/checkout@v3
+     - name: ServiceNow DevOps Unit Test Results
+       uses: ServiceNow/servicenow-devops-test-report@v3.1.0
+       with:
+         devops-integration-token: ${{ secrets.SN_DEVOPS_TOKEN }}
+         instance-url: ${{ secrets.SN_INSTANCE_URL }}
+         tool-id: ${{ secrets.SN_ORCHESTRATION_TOOL_ID }}
+         context-github: ${{ toJSON(github) }}
+         job-name: 'Build'
+         xml-report-filename: target/surefire-reports/testng-results.xml
      - name: Publish Test Results
        uses: EnricoMi/publish-unit-test-result-action@v2
        if: always()
