@@ -51,7 +51,7 @@ jobs:
           tool-id: ${{ secrets.SN_ORCHESTRATION_TOOL_ID }}
           context-github: ${{ toJSON(github) }}
           job-name: 'Register Artifact'
-          artifacts: '[{"name": "fmr","version": "0.9.33","semanticVersion": "0.9.33","repositoryName": "${{ github.repository }}"}]'
+          artifacts: '[{"name": "fmr","version": "0.9.41","semanticVersion": "0.9.41","repositoryName": "${{ github.repository }}"}]'
   
   
   ServiceNowDevOpsChange:
