@@ -65,7 +65,7 @@ jobs:
          instance-url: ${{ secrets.SN_INSTANCE_URL }}
          tool-id: ${{ secrets.SN_ORCHESTRATION_TOOL_ID }}
          context-github: ${{ toJSON(github) }}
-         job-name: 'Build'
+         job-name: 'publish-tests'
          xml-report-filename: ./test-results/junit.xml
      - name: Publish Test Results
        uses: EnricoMi/publish-unit-test-result-action@v2
