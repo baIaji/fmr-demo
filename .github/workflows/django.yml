@@ -68,7 +68,6 @@ jobs:
          job-name: 'Build'
          xml-report-filename: ./test-results/junit.xml
      - name: Publish Test Results
-       needs: registerartifact
        uses: EnricoMi/publish-unit-test-result-action@v2
        if: always()
        with:
