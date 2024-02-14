@@ -76,7 +76,7 @@ jobs:
           tool-id: ${{ secrets.SN_ORCHESTRATION_TOOL_ID }}
           # GitHub Context
           context-github: ${{ toJSON(github) }}
-          change-request: '{"attributes":"assignment_group":{"name": "Application Development"},"priority": "2","comments": "This is a sample pipeline script to be added in your change step","work_notes": "Update this to work_notes","start_date": "2024-02-27 11:59:59","end_date": "2024-02-27 11:59:59"}}'
+          change-request: '{"attributes":{ "priority": "2","comments": "Deployment Pipeline FMR version ${{ github.event.inputs.version }}","work_notes": "Update this to work_notes","start_date": "2024-02-27 11:59:59","end_date": "2024-02-27 11:59:59"}}'
           # Display Name of the Job
           job-name: 'ServiceNow DevOps Change'
   deploy:
