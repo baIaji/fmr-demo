@@ -40,6 +40,14 @@ jobs:
         path: |
           release_${{ matrix.python-version }}.zip
              !venv/ 
+
+  sonarqube:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+      with:
+        # Disabling shallow clones is recommended for improving the relevancy of reporting
+        fetch-depth: 0
     - name: SonarQube Scan
       uses: sonarsource/sonarqube-scan-action@master
       env:
